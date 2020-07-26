@@ -18,7 +18,7 @@ app.use(signinRouter);
 app.use(signoutRouter);
 app.use(signupRouter);
 
-app.all('*', async (req, res) => {
+app.all('*', async (request, response) => {
   throw new NotFoundError();
 });
 
@@ -32,8 +32,8 @@ const start = async () => {
       useCreateIndex: true
     });
     console.log('Connected to MongoDb');
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error(error);
   }
 
   app.listen(3000, () => {
