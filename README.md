@@ -30,9 +30,9 @@ See the diagram below:
 
 - Host File Setup
 
--- MacOs/Linux /etc/hosts
+  -- MacOs/Linux /etc/hosts
 
--- Windows C:\Windows\System32\Drivers\etc\hosts
+  -- Windows C:\Windows\System32\Drivers\etc\hosts
 
 Add the following line
 
