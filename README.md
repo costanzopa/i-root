@@ -30,9 +30,8 @@ See the diagram below:
 
 - Host File Setup
 
-  -- MacOs/Linux /etc/hosts
-
-  -- Windows C:\Windows\System32\Drivers\etc\hosts
+  - MacOs/Linux /etc/hosts
+  - Windows C:\Windows\System32\Drivers\etc\hosts
 
 Add the following line
 
@@ -44,6 +43,6 @@ Add the following line
 
 ## Development
 
-### Run
+### Run for development
 
 `skaffold dev`
