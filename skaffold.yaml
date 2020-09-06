@@ -24,3 +24,19 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
+    - image: costanzopa/iroot-tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
+    - image: costanzopa/iroot-orders
+      context: orders
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
