@@ -38,13 +38,13 @@ router.put(
       price: req.body.price,
     });
     await ticket.save();
-    await new TicketUpdatedPublisher(natsWrapper.client).publish({
+    new TicketUpdatedPublisher(natsWrapper.client).publish({
       id: ticket.id,
       title: ticket.title,
       price: ticket.price,
-      userId: ticket.userId
+      userId: ticket.userId,
+      version: ticket.version,
     });
-
 
     res.send(ticket);
   }
