@@ -41,6 +41,10 @@ Add the following line
 
 `kubectl create secret generic jwt-secret --from-literal=JWT_KEY=YOUR_JWT_SECRET_SIGN`
 
+- Create stripe secret
+
+`kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_aT0anyxkIhr71W8kQNWbcrqr001yyUZk1r`
+
 ## Development
 
 ### Run for development
