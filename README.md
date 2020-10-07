@@ -43,7 +43,7 @@ Add the following line
 
 - Create stripe secret
 
-`kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=YOUR_STRIPE_SECRET_KEY`
+`kubectl create secret generic stripe-secret --from-literal STRIPE_KEY=sk_test_aT0anyxkIhr71W8kQNWbcrqr001yyUZk1r`
 
 ## Development
 
