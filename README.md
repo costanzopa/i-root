@@ -26,7 +26,7 @@ See the diagram below:
 
 - Docker for mac:
 
-`kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.34.1/deploy/static/provider/cloud/deploy.yaml`
+`kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.40.2/deploy/static/provider/cloud/deploy.yaml`
 
 - Host File Setup
 
@@ -50,3 +50,9 @@ Add the following line
 ### Run for development
 
 `skaffold dev`
+
+### Browser
+
+`http://iroot.dev`
+
+`Type in browser thisisunsafe`
